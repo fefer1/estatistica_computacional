@@ -1,0 +1,237 @@
+/* ===== Base ===== */
+
+.reveal {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  color: #0f172a;  
+}
+
+.reveal .progress {
+  color: #1B3157;
+}
+
+.reveal .slides section:not(#title-slide) {
+  background: white
+}
+
+.reveal .slides section.scrollable {
+  height: 100%;
+  overflow-y: auto !important;
+}
+
+/* ===== Títulos ===== */
+.reveal h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #1B3157;
+  text-align: center;
+  text-style: bold;
+}
+
+.reveal h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #1B3157;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #336699;
+}
+
+
+/* ===== Slide de título ===== */
+.reveal #title-slide {
+  text-align: left !important;
+  padding-left: 0% !important;
+}
+
+/* Bloco de título limitado à metade esquerda */
+.reveal #title-slide h1 {
+  width: 58%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left !important;
+
+  font-size: 2.3 em;
+  font-weight: 700;
+  color: white;
+}
+
+/* Subtítulo e autor também alinhados à esquerda */
+.reveal #title-slide h2 * {
+  width: 58%;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left !important;
+  padding-left: 0% !important;
+  color: white;
+  font-style: italic !important;
+
+}
+
+.reveal #title-slide p {
+  width: 58%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left !important;
+  color: white;
+  font-style: italic !important;
+}
+
+.reveal #title-slide .quarto-title-author {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: 1.8% !important;
+  text-align: left !important;
+  color: white !important;
+  font-size: 1.2em;
+  font-weight: 300;
+  display: block;
+  background-color: rgba(106, 162, 185, 0.65);
+  border-radius: 80px;
+
+}
+
+.reveal #title-slide .quarto-title-subtitle {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: 0% !important;
+  text-align: left !important;
+  color: white !important;
+  font-size: 700;
+  font-weight: 300;
+  font-style: italic !important;
+
+}
+
+/* ===== Texto ===== */
+.reveal p,
+.reveal li {
+  line-height: 1.45;
+}
+
+/* ===== Listas Não Ordenadas ===== */
+.reveal ul li::marker {
+  color: #6AA2B9;
+}
+
+/* ===== Listas Ordenadas ===== */
+.reveal ol {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.reveal ol[start="3"] {
+  counter-reset: item 2;
+}
+
+.reveal ol > li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 20px;
+}
+
+.reveal ol > li::marker {
+  content: "";
+}
+
+.reveal ol > li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1B3157;
+  background: #D5DBE6;
+  padding: 2px 6px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== Caixas coloridas ===== */
+.box-blue {
+  border-right: 8px solid #1B3157;
+  background: #D5DBE6;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.box-green {
+  border-left: 8px solid #003E32;
+  background: #E2F0D9;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 2 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== Destaques ===== */
+.highlight-blue {
+  color: #1B3157;
+  font-weight: 700;
+}
+
+.highlight-green {
+  color: #003E32;
+  font-weight: 700;
+}
+
+.indice-font-blue {
+  color: #1B3157;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 0px;
+}
+
+.indice-font-bold{
+font-weight: 600;
+}
+
+.highlight-background-green {
+  background: linear-gradient(
+    transparent 40%,
+    #E2F0D9 40%,
+    #E2F0D9 90%,
+    transparent 90%
+  );
+}
+
+
+
+.highlight-background-blue {
+  color: #1B3157;
+  font-weight: 600;
+  background: linear-gradient(
+    transparent 40%,
+    #D5DBE6 40%,
+    #D5DBE6 90%,
+    transparent 90%
+  );
+
+  padding: 0.1em 0.1em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+}
+
+/* ===== Rodapé ===== */
+.reveal .footer {
+  font-size: 0.5em;
+  color: #1B3157;
+}
+
+/* ===== Tabelas ===== */
+
+.reveal table {
+  font-size: 22px !important;
+}
+
+.reveal table th,
+.reveal table td {
+  font-size: 20px !important;
+}
